@@ -2,13 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ixdstudio.kursusapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ullalogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ullalogo_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppThemeNoBar">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +24,12 @@
         <activity android:name=".ContactUs" />
         <activity android:name=".AboutUs" />
         <activity android:name=".Menu" />
-        <activity android:name=".Test"></activity>
+        <activity android:name=".Test" />
+        <activity android:name=".profile" />
+        <activity android:name=".Events"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCu0A9GdfEaBX53KiQuYUr8L5g945YiS0k" />
     </application>
 
 </manifest>

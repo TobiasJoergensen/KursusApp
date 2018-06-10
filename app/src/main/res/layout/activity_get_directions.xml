@@ -4,6 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ixdstudio.kursusapp.GetDirections">
+    tools:context="com.example.ixdstudio.kursusapp.GetDirections"
+    android:background="@mipmap/background_ulla">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/returnGetDirections"
+        tools:context="com.example.tobia.myapplication.MapsActivity" />
+
+    <Button
+        android:id="@+id/returnGetDirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="returnGetDirectionsOnClick"
+        android:text="Return"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
