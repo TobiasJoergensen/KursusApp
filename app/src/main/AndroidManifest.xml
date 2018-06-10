@@ -29,7 +29,7 @@
         <activity android:name=".Events"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCu0A9GdfEaBX53KiQuYUr8L5g945YiS0k" />
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>
