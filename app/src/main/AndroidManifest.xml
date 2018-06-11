@@ -13,20 +13,21 @@
         android:roundIcon="@mipmap/ullalogo_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GetDirections" />
-        <activity android:name=".ContactUs" />
-        <activity android:name=".AboutUs" />
-        <activity android:name=".Menu" />
-        <activity android:name=".Test" />
-        <activity android:name=".profile" />
-        <activity android:name=".Events"></activity>
+        <activity android:name=".GetDirections" android:screenOrientation="portrait"/>
+        <activity android:name=".ContactUs" android:screenOrientation="portrait"/>
+        <activity android:name=".AboutUs" android:screenOrientation="portrait"/>
+        <activity android:name=".Menu" android:screenOrientation="portrait"/>
+        <activity android:name=".Test" android:screenOrientation="portrait"/>
+        <activity android:name=".profile" android:screenOrientation="portrait"/>
+        <activity android:name=".Events" android:screenOrientation="portrait"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
